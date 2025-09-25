@@ -11,6 +11,5 @@ public record WeatherResponse(
 ) {
     public record Main(double temp) {}
 
-    // CORREÇÃO: Adicionada a anotação para corresponder ao JSON "description"
     public record Weather(@JsonProperty("description") String description) {}
 }

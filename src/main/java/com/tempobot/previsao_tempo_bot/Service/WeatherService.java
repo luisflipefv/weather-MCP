@@ -13,7 +13,6 @@ import java.util.function.Function;
 @Configuration
 public class WeatherService {
 
-    // CORREÇÃO: Injetando a chave a partir do application.properties
     @Value("${app.api.weather.key}")
     private String weatherApiKey;
 
